@@ -1,0 +1,46 @@
+<div class="row p-3 bg-light">
+<ngb-carousel class="col-sm-12 col-md-12 col-lg-8 p-1">
+  <ng-template ngbSlide *ngFor="let image of images">
+    <div class="picsum-img-wrapper">
+      <img class="d-block img-fluid" [src]="image.link" alt="Random first slide">
+    </div>
+    <div class="carousel-caption">
+      <h3>{{image.name}}</h3>
+      <p>{{image.descr}}</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
+
+
+
+<!-- <div class="alert alert-success" role="alert">
+  This is a success alert—check it out!
+</div> -->
+
+  <div class="col-sm-12 col-md-12 col-lg-4 mt-1 h-100 bg-light">
+    <div class="col-12 card text-dark bg-light">
+      <div class="card-header">Visitali</div>
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text">Un pò di link di alcuni miei progetti</p>
+        <p><br><br><br></p>
+        <div class="list-group" *ngFor="let link of links">
+          <a href="{{link.link}}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action list-group-item-info" name="{{link.id}}">{{link.name}}</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+<app-listbaseskills></app-listbaseskills>
+
+
+
+
+
+
+
+

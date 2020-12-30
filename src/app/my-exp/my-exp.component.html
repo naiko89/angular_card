@@ -1,0 +1,112 @@
+<div class="row p-3">
+  <div class="pix_section pix-padding-v-40" id="section_testimonials_1" style="display: block;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-xs-12 col-sm-12 column ui-droppable">
+          <div class="pix-content pix-padding-bottom-30">
+            <h2 class="pix-black-gray-dark text-center pix-no-margin-top secondary-font">
+              <span class="pix_edit_text"><strong>Cosa possiamo dire...</strong></span>
+            </h2>
+            <h5 class="pix-black-gray-light text-center">
+              <span class="pix_edit_text">Ecco alcune informazioni</span>
+            </h5>
+          </div>
+        </div>
+        <div class="col-md-1 col-xs-12 col-sm-1 column ui-droppable">
+        </div>
+
+        <div class="col-md-10 col-xs-12 col-sm-10 column ui-droppable">
+          <div class="pix-content pix-padding-bottom-30 pix-margin-v-30">
+            <div class="media">
+
+              <div class="media-right media-top text-center media-box-area mr-2">
+                <div class="pix-inner">
+                  <div class="pix-round-shape-120 pix-margin-h-10" style="height: 50px;">
+                 <img src="/assets/01.png" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="media-body media-top media-box-area">
+                <div class="pix-inner">
+                  <h5 class="pix-black-gray pix-no-margin-top pix-no-margin-bottom">
+                    <span class="pix_edit_text"><strong>Buffo Nicola</strong></span>
+                  </h5>
+                  <p class="pix-black-gray-light big-text-20 pix-margin-bottom-20">
+                    <span class="pix_edit_text">"Ognuno è un genio ma se si giudica un pesce dalla sua abilità di arrampicarsi sugli alberi, lui passerà tutta la vita a credersi stupido" A. Einstein</span>
+                  </p>
+                </div>
+                <div class="" style="min-height: 500px">
+
+                  <ngb-pagination [collectionSize]="40" [(page)]="page" class="d-flex justify-content-end"></ngb-pagination>
+
+                  <div [ngSwitch]="page">
+                    <div *ngSwitchCase="1">
+                      <h5 class="d-flex justify-content-end">Esperienze Lavorative</h5>
+                      <ngb-accordion #acc="ngbAccordion" *ngFor="let exp of expsw">
+                        <ngb-panel title="{{exp.ditta | titlecase}} : {{exp.data[0] | date}} - {{exp.data[1] | date}}">
+                          <ng-template ngbPanelContent>
+                            <ul>
+                              <li><label>Ditta: </label> {{exp.ditta}}</li>
+                              <li><label>Settore: </label> {{exp.tipo}}</li>
+                              <li><label>Impiego: </label> {{exp.impiego}}</li>
+                            </ul>
+                            <ng-container *ngFor="let task of exp.mansioni">
+                              <article>{{task}}</article>
+                            </ng-container>
+                            <article></article>
+                          </ng-template>
+                        </ngb-panel>
+                      </ngb-accordion>
+                    </div>
+                    <div *ngSwitchCase="2">
+                      <h5 class="d-flex justify-content-end">Esperienze Scolastiche</h5>
+                      <ng-container *ngFor="let instr of expsi">
+                        <ul>
+                          <li><label>Data: </label> {{instr.data | date : "yyyy"}}</li>
+                          <li><label>Istituto: </label> {{instr.istituto}} </li>
+                          <li><label>Qualifica: </label> {{instr.qualifica}} </li>
+                        </ul>
+                      </ng-container>
+
+                    </div>
+                    <div *ngSwitchCase="3">
+                      Ho curato la pagina facebook di un candidato Sindaco del mio comune nell’ anno 2019 utilizzata per la campagna elettorale, con inserimento dati della pagina profilata per Personaggio Pubblico, con slogan su volantino digitale generato con gimp e condiviso in jpeg su bacheca.
+
+                      Curo un canale youtube di un maestro di ballo, con collegamento ad adsense.
+                    </div>
+                    <div *ngSwitchCase="4">
+
+                    </div>
+                  </div>
+
+
+
+
+
+                </div>
+
+
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+</div>
