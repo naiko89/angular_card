@@ -24,7 +24,7 @@
 
 
     <div class="container">
-      <div class="row" style="min-height: 200px;">
+      <div class="row" style="min-height: 10px;">
 
       </div>
     </div>
@@ -39,12 +39,57 @@
 </div>
 
 
-<div class="col-lg-12 col-md-12 col-sm-12 bg-transparent p-0 MyBg" style="min-height: 400px"></div>
+<div class="container col-lg-12 col-md-12 col-sm-12 bg-transparent MyBg" style="min-height: 400px; padding-top: 150px; padding-bottom: 150px;">
+  <div class="row justify-content-center" style="">
+  <div class="col-lg-5 col-md-10 col-sm-10 m-0 p-0" style="min-height: 100%;"><app-carousel></app-carousel></div>
+  <div class="col-lg-4 col-md-10 col-sm-10 bg-white ml-0" style="min-height: 100%; box-shadow: 0 8px 8px 0px rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+
+    <div class="col-md-12 p-2">
+      <form class="form-horizontal" method="post">
+        <fieldset>
+          <legend class="text-center header">Contattami</legend>
+
+          <div class="form-group">
+            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+            <div class="col-md-12">
+              <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+            <div class="col-md-12">
+              <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-12 text-center">
+              <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+
+
+
+
+  </div>
+  </div>
+</div>
 
 <div class="container col-lg-12 col-md-10 col-sm-12">
-  <div class="row justify-content-center p-3" style="min-height: 800px;">
-    <div class="col-lg-5 col-md-10 col-sm-10 mb-2" style="min-height: 100%; background-color: red">prova1</div>
-    <div class="col-lg-5 col-md-10 col-sm-10 mb-2" style="background-color: yellow; min-height: 100%;">prova 2</div>
+  <div class="row justify-content-center p-3" style="">
+    <div class="col-lg-8 col-md-10 col-sm-10 mb-2" style="min-height: 600px; border-style: solid">
+
+
+      <app-citations> </app-citations>
+
+
+    </div>
+
 
   </div>
 
@@ -52,7 +97,7 @@
 </div>
 
 
-<div class="MyBg" >
+<div class="MyBg" style="padding-top: 50px; padding-bottom: 30px;">
   <app-footer ></app-footer>
 </div>
 

@@ -1,19 +1,18 @@
 <div class="container p-3 m-0 bg-light col-12">
   <div class="row p-0">
-      <div class="col-12 card-deck mr-5" >
+      <div class="col-12 card-deck mr-5">
         <div class="col-lg-3" *ngFor="let link of links">
           <div class="card text-dark bg-light mb-1">
             <div class="card-header">{{link.name}}</div>
             <div class="card-body" style="min-height: 200px;">
               <h5 class="card-title"></h5>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
+                <li class="list-group-item">{{link.descr}}</li>
+                <li class="list-group-item">componenti usati</li>
               </ul>
               </div>
             <div class="card-footer">
-              <a href="{{link.link}}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action list-group-item-info" name="{{link.id}}">{{link.name}}</a>
+              <a href="{{link.link}}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action list-group-item-info text-center" name="{{link.id}}">Visita</a>
             </div>
           </div>
 
@@ -22,26 +21,6 @@
   </div>
 </div>
 
-
-
-<!--
-<div class="container col-12 p-0 m-0">
-  <div class="row bg-dark p-5">
-    <ngb-carousel class="col-sm-12 col-md-12 col-lg-12 ">
-      <ng-template ngbSlide *ngFor="let image of images">
-        <div class="picsum-img-wrapper">
-          <img class="d-block img-fluid" [src]="image.link" alt="Random first slide">
-        </div>
-        <div class="carousel-caption">
-          <h3>{{image.name}}</h3>
-          <p>{{image.descr}}</p>
-        </div>
-      </ng-template>
-    </ngb-carousel>
-  </div>
-</div>
-
--->
 
 
 

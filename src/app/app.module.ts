@@ -10,6 +10,8 @@ import { ListbaseskillsComponent } from './listbaseskills/listbaseskills.compone
 import { MyExpComponent } from './my-exp/my-exp.component';
 import { FooterComponent } from './footer/footer.component';
 import { ZoomDirective } from './directive/zoom.directive';
+import { CarouselComponent } from './carousel/carousel.component';
+import { CitationsComponent } from './citations/citations.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ZoomDirective } from './directive/zoom.directive';
     ListbaseskillsComponent,
     MyExpComponent,
     FooterComponent,
-    ZoomDirective
+    ZoomDirective,
+    CarouselComponent,
+    CitationsComponent
   ],
   imports: [
     BrowserModule,
