@@ -7,12 +7,10 @@ export class ZoomDirective {
 
   constructor(private element: ElementRef) { }
   @HostListener('mouseenter') onMouseEnter(): void {
-    this.zoom(120);
-    this.element.nativeElement.style.backgroundColor = '#e9ecef';
+    this.zoom(35);
   }
   @HostListener('mouseout') onMouseLeave(): void {
-    this.zoom(100);
-    this.element.nativeElement.style.backgroundColor = 'white';
+    this.zoom(30);
   }
   private zoom( size: number ): void{
     this.element.nativeElement.height = size;

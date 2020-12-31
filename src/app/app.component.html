@@ -1,31 +1,61 @@
 
-<body class="bg-dark">
-<div class="container col-lg-8 col-md-10 col-sm-12 bg-light">
- <div class="row">
-   <div class="jumbotron col-12" style="margin-bottom: 0px;padding-bottom: 0px">
-     <!--<h1>Tempastro</h1>
-     <p>Miscellaneous di sviluppo software front-end e back-and</p> -->
-     <nav class="">
-       <ul ngbNav #nav="ngbNav" class="nav-tabs">
-         <li ngbNavItem>
-           <a ngbNavLink>Home</a>
-           <ng-template ngbNavContent> <app-shell> </app-shell> </ng-template>
-         </li>
-         <li ngbNavItem>
-           <a ngbNavLink>Mie Esperienze</a>
-           <ng-template ngbNavContent> <app-my-exp> </app-my-exp> </ng-template>
-         </li>
-       </ul>
-     </nav>
-   </div>
- </div>
+<body class="">
+
+  <div class="container col-lg-12 col-md-10 col-sm-12" class="MyBg">
+    <div class="row">
+      <div class="jumbotron col-12 rounded-0" style="margin-bottom: 0px;padding-bottom: 0px; min-height: 100px; background-color: transparent">
+        <!--<h1>Tempastro</h1>
+        <p>Miscellaneous di sviluppo software front-end e back-and</p> -->
+        <nav class="">
+          <ul ngbNav #nav="ngbNav" class="nav-tabs">
+            <li ngbNavItem>
+              <a ngbNavLink>Home</a>
+              <ng-template ngbNavContent> <app-shell> </app-shell> </ng-template>
+            </li>
+            <li ngbNavItem>
+              <a ngbNavLink>Mie Esperienze</a>
+              <ng-template ngbNavContent> <app-my-exp> </app-my-exp> </ng-template>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <app-listbaseskills></app-listbaseskills>
 
 
+    <div class="container">
+      <div class="row" style="min-height: 200px;">
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+<div class="container col-lg-10 col-md-10 col-sm-10 bg-transparent p-0" style="min-height: 200px;">
   <div [ngbNavOutlet]="nav"></div>
+</div>
+
+
+<div class="col-lg-12 col-md-12 col-sm-12 bg-transparent p-0 MyBg" style="min-height: 400px"></div>
+
+<div class="container col-lg-12 col-md-10 col-sm-12">
+  <div class="row justify-content-center p-3" style="min-height: 800px;">
+    <div class="col-lg-5 col-md-10 col-sm-10 mb-2" style="min-height: 100%; background-color: red">prova1</div>
+    <div class="col-lg-5 col-md-10 col-sm-10 mb-2" style="background-color: yellow; min-height: 100%;">prova 2</div>
+
+  </div>
+
 
 </div>
 
-<app-footer></app-footer>
+
+<div class="MyBg" >
+  <app-footer ></app-footer>
+</div>
+
 </body>
 
 
