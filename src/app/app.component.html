@@ -5,28 +5,33 @@
 </head>
 <body class="">
 
-  <div class="container col-lg-12 col-md-10 col-sm-12" class="MyBg" style="min-height: 350px;">
+  <div class="container col-lg-12 col-sm-12" class="MyBg" style="min-height: 350px;">
+
     <div class="row">
+
       <div class="jumbotron col-12 rounded-0" style="margin-bottom: 0px;padding-bottom: 0px; min-height: 100px; background-color: transparent">
         <nav class="">
           <ul ngbNav #nav="ngbNav" class="nav-tabs">
             <li ngbNavItem>
-              <a ngbNavLink>Home</a>
+              <a ngbNavLink class="head-navbar">Home</a>
               <ng-template ngbNavContent>
 
                 <app-carousel></app-carousel>
 
 
-                <div class="MyBg" style="min-height:10px;padding-bottom: 30px;"></div>
+                <div class="MyBg col-12" style="min-height:100px; padding-bottom: 30px;">
+
+
+                </div>
                 <app-shell> </app-shell>
-                <div class="MyBg" style="min-height:50px;padding-bottom: 30px;"></div>
+                <div class="MyBg col-12" style="min-height:250px;padding-bottom: 30px;"></div>
                 <app-citations> </app-citations>
 
 
               </ng-template>
             </li>
             <li ngbNavItem>
-              <a ngbNavLink>Mie Esperienze</a>
+              <a ngbNavLink class="head-navbar">Mie Esperienze</a>
               <ng-template ngbNavContent>
                  <app-my-exp> </app-my-exp>
               </ng-template>

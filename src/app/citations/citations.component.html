@@ -1,37 +1,42 @@
-<div class="container col-lg-12 col-md-10 col-sm-12">
-  <div class="row justify-content-center p-1" style="">
-    <div class="col-lg-10 col-md-10 col-sm-10 mb-2" style="min-height: 600px;">
-      <h3 class="text-center p-2 m-5">Alcune citazioni che mi piacciono</h3>
-<div class="row pt-5">
+<div class="container col-lg-12 col-md-12 col-sm-12 pt-5">
+  <hr />
+  <div id="" class="text-center pt-3">
+    <h3 class="" style="">Alcuni personaggi interessanti</h3>
+    <p class="text-center">e alcune loro citazioni</p>
+  </div>
+  <div class="justify-content-center p-1" style="">
 
 
 
+    <div class="row col-12">
 
-    <blockquote class="blockquote col-6" *ngFor="let citazione of citazioni">
-      <div class="container">
-        <div class="row">
-          <div class="col-2 text-right">
-            <img class="rounded-circle" src="{{ citazione.link }}" alt="" height="60" width="60">
+
+          <div class="col-sm-12 col-md-6 col-lg-4" style=""  *ngFor="let citazione of citazioni">
+            <hr />
+            <blockquote class="blockquote text-center" style="">
+            <div class="blackquote-header" style="margin-bottom: 15px;">
+              <img class="rounded-circle"  src="{{ citazione.link }}" alt="" height="80" width="80">
+            </div>
+            <div class="blackquote-body" style="">
+              <p class="mb-2">{{citazione.testo}}</p>
+              <footer class="blockquote-footer">{{citazione.firma}}<cite title="Source Title"></cite></footer>
+            </div>
+            </blockquote>
+
           </div>
-          <div class="col-6">
-            <p class="mb-2">{{citazione.testo}}</p>
-            <footer class="blockquote-footer">{{citazione.firma}}<cite title="Source Title"></cite></footer>
-          </div>
+
+
 
         </div>
-      </div>
-
-
-    </blockquote>
 
 
 
 
 
 
-</div>
 
-    </div>
+
+
 
 
   </div>

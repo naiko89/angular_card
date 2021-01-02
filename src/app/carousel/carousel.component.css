@@ -3,3 +3,16 @@
   bottom: auto;
 
 }
+.my-shadow-title{
+  font-family: 'Gruppo';
+  font-weight: 900;
+  font-size: 40px;
+  /*font-family:  'Aclonica';font-size: 28px; font-family: 'Gruppo';*/
+}
+
+.hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
