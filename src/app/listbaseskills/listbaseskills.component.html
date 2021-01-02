@@ -1,7 +1,11 @@
 
-<div class="container m-0 p-0 col-12">
+<div class="container mr-2 col-12 pt-3">
+  <div id="" style="text-align: start" class="pl-1 text-white">
+  <h1 class="my-gig-title" style="">Tempastro</h1>
+  <p class="pl-5 text-right my-subgig-title">Miscellaneous di esperimenti e sviluppo</p>
+  </div>
   <div id="intro" style="text-align: end">
-    <ul class="list-inline p-2">
+    <ul class="list-inline">
       <li class="list-inline-item p-3 m-2" *ngFor="let icon of iconsp" >
         <!-- <img src="http://placehold.it/150x100" class="img-responsive inline-block" alt="Responsive image" /> -->
         <a href="{{icon.navigLink}}" target="_blank" style="position: absolute">
@@ -13,18 +17,4 @@
 
 </div>
 
-     <!--<div class="row" >
-      <div class="col-12 mx-auto" >
-        <div class="row justify-content-center" >
-          <div class="col-md-4 col-lg-3 mb-4" *ngFor="let icon of iconsp">
-            <a href="{{icon.navigLink}}" target="_blank">
-            <img class="mb-3 rounded-circle" src="{{icon.link}}" alt="" height="20" width="20" appZoom>
-            </a>
-            <h6 class="mb-0">{{icon.name}}</h6>
-            <small>{{icon.descr}}</small>
-          </div>
-        </div>
-      </div>
-    </div>
-    -->
 

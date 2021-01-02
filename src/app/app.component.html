@@ -1,39 +1,42 @@
-
+<head>
+  <!--<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'> -->
+  <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+</head>
 <body class="">
 
   <div class="container col-lg-12 col-md-10 col-sm-12" class="MyBg" style="min-height: 350px;">
     <div class="row">
       <div class="jumbotron col-12 rounded-0" style="margin-bottom: 0px;padding-bottom: 0px; min-height: 100px; background-color: transparent">
-        <!--<h1>Tempastro</h1>
-        <p>Miscellaneous di sviluppo software front-end e back-and</p> -->
         <nav class="">
           <ul ngbNav #nav="ngbNav" class="nav-tabs">
             <li ngbNavItem>
               <a ngbNavLink>Home</a>
               <ng-template ngbNavContent>
 
+                <app-carousel></app-carousel>
+
+
+                <div class="MyBg" style="min-height:10px;padding-bottom: 30px;"></div>
                 <app-shell> </app-shell>
-
-                <div class="MyBg" style="min-height:250px;padding-bottom: 30px;"></div>
-
-
-
+                <div class="MyBg" style="min-height:50px;padding-bottom: 30px;"></div>
                 <app-citations> </app-citations>
 
-                <div class="MyBg" style="min-height:50px;padding-bottom: 30px;"></div>
-
-
-                <app-carousel></app-carousel>
 
               </ng-template>
             </li>
             <li ngbNavItem>
               <a ngbNavLink>Mie Esperienze</a>
-              <ng-template ngbNavContent> <app-my-exp> </app-my-exp> </ng-template>
+              <ng-template ngbNavContent>
+                 <app-my-exp> </app-my-exp>
+              </ng-template>
             </li>
           </ul>
         </nav>
+
+
       </div>
+
     </div>
 
 
@@ -42,7 +45,6 @@
 
     <div class="container">
       <div class="row" style="min-height: 10px;">
-
       </div>
     </div>
 

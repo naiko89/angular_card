@@ -1,4 +1,6 @@
 <div class="container p-5 m-0 col-12" style="margin-bottom: 50px;">
+
+
   <div class="row p-0">
       <div class="col-12 card-deck mr-5">
         <div class="col-lg-3" *ngFor="let link of links">
@@ -8,7 +10,28 @@
               <h5 class="card-title"></h5>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">{{link.descr}}</li>
-                <li class="list-group-item">componenti usati</li>
+
+                <li class="list-group-item p-1" *ngIf="link.component.frm.length !== 0">
+                  <span class="float-right pr-2" *ngFor="let imgFrm of link.component.frm">
+                    <img  src="{{imgFrm}}" height="18" width="18">
+                  </span>
+
+                </li>
+
+                <li class="list-group-item p-1" *ngIf="link.component.db !== 0">
+                  <span class="float-right pr-2" *ngFor="let imgFrm of link.component.db">
+                    <img  src="{{imgFrm}}" height="18" width="18">
+                  </span>
+
+                </li>
+
+                <li class="list-group-item p-1" *ngIf="link.component.lang !== 0">
+                  <span class="float-right pr-2" *ngFor="let imgFrm of link.component.lang">
+                    <img  src="{{imgFrm}}" height="18" width="18">
+                  </span>
+
+                </li>
+
               </ul>
               </div>
             <div class="card-footer">
