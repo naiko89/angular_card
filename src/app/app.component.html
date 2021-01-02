@@ -10,7 +10,19 @@
           <ul ngbNav #nav="ngbNav" class="nav-tabs">
             <li ngbNavItem>
               <a ngbNavLink>Home</a>
-              <ng-template ngbNavContent> <app-shell> </app-shell> </ng-template>
+              <ng-template ngbNavContent>
+
+                <app-shell> </app-shell>
+
+                <div class="MyBg" style="min-height:350px;padding-bottom: 30px;"></div>
+
+
+
+                <app-citations> </app-citations>
+
+                <div class="MyBg" style="min-height:50px;padding-bottom: 30px;"></div>
+
+              </ng-template>
             </li>
             <li ngbNavItem>
               <a ngbNavLink>Mie Esperienze</a>
@@ -20,6 +32,8 @@
         </nav>
       </div>
     </div>
+
+
     <app-listbaseskills></app-listbaseskills>
 
 
@@ -34,15 +48,19 @@
 
   </div>
 
-<div class="container col-lg-10 col-md-10 col-sm-10 bg-transparent p-0" style="min-height: 200px;">
-  <div [ngbNavOutlet]="nav"></div>
+<div class="col-lg-12 col-md-12 col-sm-10 bg-transparent p-0" style="min-height: 200px;">
+  <div [ngbNavOutlet]="nav" class="bg-transparent"></div>
 </div>
 
 
-<div class="container col-lg-12 col-md-12 col-sm-12 bg-transparent MyBg" style="min-height: 400px; padding-top: 150px; padding-bottom: 150px;">
-  <div class="row justify-content-center" style="">
-  <div class="col-lg-5 col-md-10 col-sm-10 m-0 p-0" style="min-height: 100%;"><app-carousel></app-carousel></div>
-  <div class="col-lg-4 col-md-10 col-sm-10 bg-white ml-0" style="min-height: 100%; box-shadow: 0 8px 8px 0px rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+<div class="container col-lg-12 col-md-12 col-sm-12 bg-transparent MyBg" style="min-height: 400px; ">
+  <div class="row justify-content-center" style="padding: 40px;">
+  <div class="col-lg-5 col-md-10 col-sm-10 m-0 p-0" style="min-height: 100%;">
+
+    <app-carousel></app-carousel>
+
+  </div>
+  <div class="col-lg-4 col-md-10 col-sm-10 bg-white ml-0" style="min-height: 100%;">
 
     <div class="col-md-12 p-2">
       <form class="form-horizontal" method="post">
@@ -80,23 +98,14 @@
   </div>
 </div>
 
-<div class="container col-lg-12 col-md-10 col-sm-12">
-  <div class="row justify-content-center p-3" style="">
-    <div class="col-lg-10 col-md-10 col-sm-10 mb-2" style="min-height: 600px;">
 
 
-      <app-citations> </app-citations>
 
 
-    </div>
 
 
-  </div>
 
-
-</div>
-
-
+<div class="container" style="min-height: 250px;"></div>
 <div class="MyBg" style="padding-top: 50px; padding-bottom: 30px;">
   <app-footer ></app-footer>
 </div>

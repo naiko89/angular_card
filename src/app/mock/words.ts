@@ -1,15 +1,15 @@
 
 export const WORDS = [
-  {id: 1, testo: '“La pace è un sogno, può diventarerealtà… Ma per costruirla bisogna essere capaci di sognare.”', firma: 'Nelson Mandela'},
-  {id: 2, testo: '“Mai memorizzare quello che puoi comodamente trovare in un libro.”', firma: 'Albert Einstein'},
-  {id: 3, testo: '“Strapazzando un uomo so, da come reagisce, che cosa pensare di lui. Vedo a quale tono è salita la sua anima: se colpite un bronzo con un guanto, non vi darà alcun suono; ma colpitelo con un martello e risuonerà.””', firma: 'Napoleone Buonaparte'},
-  {id: 4, testo: '““Chi ha raggiunto lo stadio di non meravigliarsi più di nulla dimostra semplicemente di aver perduto l\'arte del ragionare e del riflettere.”', firma: 'Max Planck'},
-  {id: 5, testo: '“I computer sono incredibilmente veloci, accurati e stupidi. Gli uomini sono incredibilmente lenti, inaccurati e intelligenti. L\'insieme dei due costituisce una forza incalcolabile.”', firma: 'Albert Einstein'},
-  {id: 6, testo: '“L\'atteggiamento di fondo della mia vita è stata la passione. Per realizzare i miei sogni ho agito sempre spinto solo dalla passione. La passione muove ogni cosa, è una forza davvero straordinaria.”', firma: 'Roberto Baggio'},
-  {id: 7, testo: '“Un buon cervello e un cuore puro sono sempre un\'accoppiata formidabile. Ma quando aggiungi a questo una voce o una penna da letterato, allora hai qualcosa di veramente speciale.”', firma: 'Nelson Mandela'},
-  {id: 8, testo: '“Lascio agli altri la convinzione di essere i migliori, per me tengo la certezza che nella vita si può sempre migliorare.”', firma: 'Marilyn Monroe'},
-  {id: 9, testo: '“La teoria è quando si sa tutto ma non funziona niente. La pratica è quando tutto funziona ma non si sa il perché. In ogni caso si finisce sempre con il coniugare la teoria con la pratica: non funziona niente e non si sa il perché.”', firma: 'Albert Einstein'},
-  {id: 10, testo: '“Una nuova verità scientifica non trionfa perché i suoi oppositori si convincono e vedono la luce, quanto piuttosto perché alla fine muoiono, e al loro posto si forma una nuova generazione a cui i nuovi concetti diventano familiari.”', firma: 'Max Planck'},
+  {id: 1, testo: '“La pace è un sogno, può diventarerealtà… Ma per costruirla bisogna essere capaci di sognare.”', firma: 'Nelson Mandela', link: '/assets/citations/mandela.jpeg'},
+  {id: 2, testo: '“Mai memorizzare quello che puoi comodamente trovare in un libro.”', firma: 'Albert Einstein', link: '/assets/citations/einstein.jpeg'},
+  {id: 3, testo: '“Strapazzando un uomo so, da come reagisce, che cosa pensare di lui. Vedo a quale tono è salita la sua anima: se colpite un bronzo con un guanto, non vi darà alcun suono; ma colpitelo con un martello e risuonerà.””', firma: 'Napoleone Buonaparte', link: '/assets/citations/bonaparte.jpeg'},
+  {id: 4, testo: '““Chi ha raggiunto lo stadio di non meravigliarsi più di nulla dimostra semplicemente di aver perduto l\'arte del ragionare e del riflettere.”', firma: 'Max Planck', link: '/assets/citations/planck.jpeg'},
+  {id: 5, testo: '“I computer sono incredibilmente veloci, accurati e stupidi. Gli uomini sono incredibilmente lenti, inaccurati e intelligenti. L\'insieme dei due costituisce una forza incalcolabile.”', firma: 'Albert Einstein', link: '/assets/citations/einstein.jpeg'},
+  {id: 6, testo: '“L\'atteggiamento di fondo della mia vita è stata la passione. Per realizzare i miei sogni ho agito sempre spinto solo dalla passione. La passione muove ogni cosa, è una forza davvero straordinaria.”', firma: 'Roberto Baggio', link: '/assets/citations/baggio.jpeg'},
+  {id: 7, testo: '“Un buon cervello e un cuore puro sono sempre un\'accoppiata formidabile. Ma quando aggiungi a questo una voce o una penna da letterato, allora hai qualcosa di veramente speciale.”', firma: 'Nelson Mandela', link: '/assets/citations/mandela.jpeg'},
+  {id: 8, testo: '“Lascio agli altri la convinzione di essere i migliori, per me tengo la certezza che nella vita si può sempre migliorare.”', firma: 'Marilyn Monroe', link: '/assets/citations/monroe.jpeg'},
+  {id: 9, testo: '“La teoria è quando si sa tutto ma non funziona niente. La pratica è quando tutto funziona ma non si sa il perché. In ogni caso si finisce sempre con il coniugare la teoria con la pratica: non funziona niente e non si sa il perché.”', firma: 'Albert Einstein', link: '/assets/citations/einstein.jpeg'},
+  {id: 10, testo: '“Una nuova verità scientifica non trionfa perché i suoi oppositori si convincono e vedono la luce, quanto piuttosto perché alla fine muoiono, e al loro posto si forma una nuova generazione a cui i nuovi concetti diventano familiari.”', firma: 'Max Planck', link: '/assets/citations/planck.jpeg'},
 
 ];
 //  {id: 11, testo: '“Le cose sono unite da legami invisibili: non si può cogliere un fiore senza turbare una stella.”', firma: 'Albert Einstein'},
