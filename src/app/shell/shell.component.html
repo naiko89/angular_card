@@ -1,51 +1,57 @@
-<div class="container p-5 m-0 col-12" style="margin-bottom: 150px;">
+<div class="container m-0 col-12" style="margin-bottom: 150px;padding-top: 50px;">
   <hr />
 
-  <div class="row p-2">
 
-      <div class="col-12 card-deck mr-5">
+      <div class="row card-deck">
+        <div class="card-group text-dark bg-light offset-sm-2 col-sm-8 col-12 offset-lg-2 col-lg-8 align-self-center p-3 bg-white">
 
-        <div class="col-lg-3" *ngFor="let link of links">
-          <div class="card text-dark bg-light mb-1">
-            <div class="card-header">{{link.name}}</div>
-            <div class="card-body" style="min-height: 200px;">
+          <div class="col-sm-12 col-md-6 col-lg-4 p-1 " *ngFor="let link of links">
+          <div class="card">
+            <div class="card-header list-group-item list-group-item-action list-group-item-info text-center"><a href="{{link.link}}" target="_blank" rel="noopener noreferrer" class="" name="{{link.id}}">{{link.name}} - Visita</a></div>
+            <div class="card-body p-1" style="">
               <h5 class="card-title"></h5>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item">{{link.descr}}</li>
 
-                <li class="list-group-item p-1" *ngIf="link.component.frm.length !== 0">
+
+                <li class="list-group-item p-1 m-0 bg-transparent" *ngIf="link.component.frm.length !== 0">
                   <span class="float-right pr-2" *ngFor="let imgFrm of link.component.frm">
                     <img  src="{{imgFrm}}" height="18" width="18">
                   </span>
 
                 </li>
 
-                <li class="list-group-item p-1" *ngIf="link.component.db !== 0">
+
+                <li class="list-group-item p-1 m-0 bg-transparent" *ngIf="link.component.db.length !== 0">
                   <span class="float-right pr-2" *ngFor="let imgFrm of link.component.db">
                     <img  src="{{imgFrm}}" height="18" width="18">
                   </span>
 
                 </li>
 
-                <li class="list-group-item p-1" *ngIf="link.component.lang !== 0">
+
+                <li class="list-group-item p-1 m-0 bg-transparent" *ngIf="link.component.lang.length !== 0">
                   <span class="float-right pr-2" *ngFor="let imgFrm of link.component.lang">
                     <img  src="{{imgFrm}}" height="18" width="18">
                   </span>
 
                 </li>
 
+
               </ul>
-              </div>
-            <div class="card-footer">
-              <a href="{{link.link}}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action list-group-item-info text-center" name="{{link.id}}">Visita</a>
             </div>
+            <div class="card-footer">
+              {{link.descr}}
+            </div>
+          </div>
           </div>
 
         </div>
-      </div>
-  </div>
 
-  <div id="" class="text-center pt-5">
+
+      </div>
+
+
+  <div id="" class="text-center pt-5" style="padding-top: 150px;">
     <hr />
     <h3 class="p-2" style="">Alcuni miei progetti</h3>
     <p class="text-center"></p>

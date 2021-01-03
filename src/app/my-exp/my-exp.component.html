@@ -38,10 +38,12 @@
                 </div>
                 <div class="" style="min-height: 500px">
 
+
                   <ngb-pagination [collectionSize]="40" [(page)]="page" class="d-flex justify-content-end"></ngb-pagination>
 
                   <div [ngSwitch]="page">
                     <div *ngSwitchCase="1">
+                      <!--
                       <h5 class="d-flex justify-content-end">Esperienze Lavorative</h5>
                       <ngb-accordion #acc="ngbAccordion" *ngFor="let exp of expsw">
                         <ngb-panel title="{{exp.ditta | titlecase}} : {{exp.data[0] | date}} - {{exp.data[1] | date}}">
@@ -58,8 +60,10 @@
                           </ng-template>
                         </ngb-panel>
                       </ngb-accordion>
+                      -->
                     </div>
                     <div *ngSwitchCase="2">
+                      <!--
                       <h5 class="d-flex justify-content-end">Esperienze Scolastiche</h5>
                       <ng-container *ngFor="let instr of expsi">
                         <ul>
@@ -70,10 +74,9 @@
                       </ng-container>
 
                     </div>
+                    -->
                     <div *ngSwitchCase="3">
-                      Ho curato la pagina facebook di un candidato Sindaco del mio comune nell’ anno 2019 utilizzata per la campagna elettorale, con inserimento dati della pagina profilata per Personaggio Pubblico, con slogan su volantino digitale generato con gimp e condiviso in jpeg su bacheca.
 
-                      Curo un canale youtube di un maestro di ballo, con collegamento ad adsense.
                     </div>
                     <div *ngSwitchCase="4">
 

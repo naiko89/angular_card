@@ -15,9 +15,6 @@ export const LINKS: WorksLinks[] = [
     component: {frm: [ '/assets/icons/angular.png', '/assets/icons/bootstrap.png' ],
                 db: [],
                 lang: ['/assets/icons/typescript.png'] }
-  },
-  { id: 4, name: 'Quattro', link: 'www.quattro', descr: '',
-    component: { frm: [], db: [], lang: [] }
   }
 ];
 // { id: 1, name: 'Angular', link: '/assets/icons/angular.png', descr: '', navigLink: 'https://angular.io/'},

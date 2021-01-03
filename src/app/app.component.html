@@ -3,12 +3,10 @@
   <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
 </head>
-<body class="">
 
   <div class="container col-lg-12 col-sm-12" class="MyBg" style="min-height: 350px;">
 
     <div class="row">
-
       <div class="jumbotron col-12 rounded-0" style="margin-bottom: 0px;padding-bottom: 0px; min-height: 100px; background-color: transparent">
         <nav class="">
           <ul ngbNav #nav="ngbNav" class="nav-tabs">
@@ -16,8 +14,10 @@
               <a ngbNavLink class="head-navbar">Home</a>
               <ng-template ngbNavContent class="bg-danger">
                 <app-carousel></app-carousel>
+                <app-valuebox></app-valuebox>
                 <div class="MyBg col-12" style="min-height:100px; padding-bottom: 30px;">
                 </div>
+
                 <app-shell> </app-shell>
                 <div class="MyBg col-12" style="min-height:250px;padding-bottom: 30px;"></div>
                 <app-citations> </app-citations>
@@ -27,6 +27,7 @@
               <a ngbNavLink class="head-navbar">Mie Esperienze</a>
               <ng-template ngbNavContent>
                  <app-my-exp> </app-my-exp>
+                <app-carousel></app-carousel>
               </ng-template>
             </li>
           </ul>
@@ -47,10 +48,9 @@
 
 
 <div class="MyBg" style="padding-top: 50px; padding-bottom: 30px;">
+
+
   <app-footer ></app-footer>
 </div>
 
-</body>
 
-
-<!--<app-prova> </app-prova><app-navbar></app-navbar>-->

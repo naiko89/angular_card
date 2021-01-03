@@ -4,16 +4,12 @@
     <h3 class="" style="">Alcuni personaggi interessanti</h3>
     <p class="text-center">e alcune loro citazioni</p>
   </div>
+
   <div class="justify-content-center p-1" style="">
-
-
-
     <div class="row col-12">
-
-
-          <div class="col-sm-12 col-md-6 col-lg-4" style=""  *ngFor="let citazione of citazioni">
-            <hr />
-            <blockquote class="blockquote text-center" style="">
+      <div class="col-sm-12 col-md-6 col-lg-4" style=""  *ngFor="let citazione of citazioni">
+       <hr />
+         <blockquote class="blockquote text-center" style="">
             <div class="blackquote-header" style="margin-bottom: 15px;">
               <img class="rounded-circle"  src="{{ citazione.link }}" alt="" height="80" width="80">
             </div>
@@ -21,24 +17,9 @@
               <p class="mb-2">{{citazione.testo}}</p>
               <footer class="blockquote-footer">{{citazione.firma}}<cite title="Source Title"></cite></footer>
             </div>
-            </blockquote>
-
-          </div>
-
-
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-
+         </blockquote>
+      </div>
+    </div>
   </div>
 
 

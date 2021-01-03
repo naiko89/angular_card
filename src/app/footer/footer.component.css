@@ -5,8 +5,10 @@ footer {
   text-align: left;
   font: bold 16px sans-serif;
   padding: 5px 50px;
-  margin-top: 20px;
   bottom: 0;
+}
+.my-social{
+  margin-left: 5px;
 }
 
 .footer-navigation h3 {

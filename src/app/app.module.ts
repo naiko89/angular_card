@@ -12,8 +12,20 @@ import { FooterComponent } from './footer/footer.component';
 import { ZoomDirective } from './directive/zoom.directive';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CitationsComponent } from './citations/citations.component';
+import { BootstrapIconsModule } from 'ng-bootstrap-icons';
+import { allIcons} from 'ng-bootstrap-icons/icons';
+import { ValueboxComponent } from './valuebox/valuebox.component';
 
 @NgModule({
+  imports: [
+    BrowserModule,
+    NgbModule,
+    NgbPaginationModule,
+    NgbAlertModule,
+    FormsModule,
+    BootstrapIconsModule.pick(allIcons)
+  ],
+  exports: [BootstrapIconsModule],
   declarations: [
     AppComponent,
     ShellComponent,
@@ -22,14 +34,8 @@ import { CitationsComponent } from './citations/citations.component';
     FooterComponent,
     ZoomDirective,
     CarouselComponent,
-    CitationsComponent
-  ],
-  imports: [
-    BrowserModule,
-    NgbModule,
-    NgbPaginationModule,
-    NgbAlertModule,
-    FormsModule
+    CitationsComponent,
+    ValueboxComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
