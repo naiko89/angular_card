@@ -1,12 +1,12 @@
 .my-gig-title{
-  margin-top: 50px;
   font-family: 'Allerta Stencil';
   font-family: 'Gruppo';
-  font-weight: 900;
-  font-size: 80px;
-  /*font-family:  'Aclonica';font-size: 28px; font-family: 'Gruppo';*/
+  font-size: max(60px, 30px);
 }
 .my-subgig-title{
   font-family: 'Gruppo';
-  font-size: 20px;
+  font-size: max(20px, 10px);
+  position : absolute;
+  bottom   : 0;
+
 }
