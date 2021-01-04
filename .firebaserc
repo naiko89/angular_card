@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "starter-c1858"
+  },
+  "targets": {
+    "starter-c1858": {
+      "hosting": {
+        "starter": [
+          "starter-c1858"
+        ]
+      }
+    }
+  }
+}
