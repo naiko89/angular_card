@@ -5,36 +5,32 @@
 </head>
 
   <div class="container col-lg-12 col-sm-12" class="MyBg" style="min-height: 250px;">
-
-    <div class="row">
-      <div class="jumbotron col-12 rounded-0" style="margin-bottom: 0px;padding-bottom: 0px; min-height: 100px; background-color: transparent">
-        <nav class="">
-          <ul ngbNav #nav="ngbNav" class="nav-tabs">
+    <app-listbaseskills></app-listbaseskills>
+          <ul ngbNav #nav="ngbNav" class="jumbotron-fluid nav-tabs m-0 border-0" style="min-height: 120px;">
             <li ngbNavItem>
-              <a ngbNavLink class="head-navbar">Home</a>
-              <ng-template ngbNavContent class="bg-danger">
+              <div class="nav-item my-nav-item">
+                <a ngbNavLink class="bg-transparent border-0 text-white">Home</a>
+              </div>
+              <ng-template ngbNavContent>
                 <app-carousel></app-carousel>
                 <app-valuebox></app-valuebox>
-                <div class="MyBg col-12" style="min-height:100px; padding-bottom: 30px;">
-                </div>
-
+                <div class="MyBg col-12" style="min-height:100px; padding-bottom: 30px;"></div>
                 <app-shell> </app-shell>
                 <div class="MyBg col-12" style="min-height:250px;padding-bottom: 30px;"></div>
                 <app-citations> </app-citations>
               </ng-template>
             </li>
+
             <li ngbNavItem>
-              <a ngbNavLink class="head-navbar">Mie Esperienze</a>
+              <div class="nav-item my-nav-item">
+                <a ngbNavLink class="bg-transparent border-0 text-white">Mie Esperienze</a>
+              </div>
               <ng-template ngbNavContent>
                  <app-my-exp> </app-my-exp>
-                <app-carousel></app-carousel>
               </ng-template>
             </li>
           </ul>
-        </nav>
-      </div>
-    </div>
-    <app-listbaseskills></app-listbaseskills>
+
     <div class="container">
       <div class="row" style="min-height: 10px;">
       </div>
@@ -48,6 +44,9 @@
 
 
 <div class="MyBg" style="padding-top: 50px; padding-bottom: 30px;">
+
+
+
 
 
   <app-footer ></app-footer>

@@ -1,42 +1,32 @@
-<div class="container m-0 col-12" style="margin-bottom: 150px;padding-top: 50px;">
+<div class="container m-0 col-12" style="margin-bottom: 150px;">
+
+  <div id="" class="text-center pt-5" style="padding-top: 150px;">
+    <hr />
+    <h3 class="p-2" style="">Alcuni miei progetti</h3>
+    <p class="text-center"></p>
+  </div>
   <hr />
+
 
 
       <div class="row card-deck">
         <div class="card-group text-dark bg-light offset-sm-2 col-sm-8 col-12 offset-lg-2 col-lg-8 align-self-center p-3 bg-white">
-
           <div class="col-sm-12 col-md-6 col-lg-4 p-1 " *ngFor="let link of links">
           <div class="card">
-            <div class="card-header list-group-item list-group-item-action list-group-item-info text-center"><a href="{{link.link}}" target="_blank" rel="noopener noreferrer" class="" name="{{link.id}}">{{link.name}} - Visita</a></div>
-            <div class="card-body p-1" style="">
-              <h5 class="card-title"></h5>
-              <ul class="list-group list-group-flush">
-
-
-                <li class="list-group-item p-1 m-0 bg-transparent" *ngIf="link.component.frm.length !== 0">
-                  <span class="float-right pr-2" *ngFor="let imgFrm of link.component.frm">
-                    <img  src="{{imgFrm}}" height="18" width="18">
-                  </span>
-
+            <div class="card-body p-1">
+              <h5 class="card-title">
+                <div class="card-img">
+                <img class="d-block img-fluid" src="{{link.image}}">
+                </div></h5>
+              <div class="bg-info card-header text-center mb-1" style="font-size: 18px;font-family: 'Allerta Stencil';">
+                <a href="{{link.link}}" target="_blank" rel="noopener noreferrer" class="text-white" name="{{link.id}}">{{link.name}} - Visita</a>
+              </div>
+              <ul class="list-group list-group-horizontal align-content-end">
+                <li class="list-group-item col-12 text-right ">
+                  <img class="ml-2"  src="{{imgFrm}}" height="18" width="18" *ngFor="let imgFrm of link.component.frm">
+                  <img class="ml-2"  src="{{imgFrm}}" height="18" width="18" *ngFor="let imgFrm of link.component.db">
+                  <img class="ml-2" src="{{imgFrm}}" height="18" width="18" *ngFor="let imgFrm of link.component.lang">
                 </li>
-
-
-                <li class="list-group-item p-1 m-0 bg-transparent" *ngIf="link.component.db.length !== 0">
-                  <span class="float-right pr-2" *ngFor="let imgFrm of link.component.db">
-                    <img  src="{{imgFrm}}" height="18" width="18">
-                  </span>
-
-                </li>
-
-
-                <li class="list-group-item p-1 m-0 bg-transparent" *ngIf="link.component.lang.length !== 0">
-                  <span class="float-right pr-2" *ngFor="let imgFrm of link.component.lang">
-                    <img  src="{{imgFrm}}" height="18" width="18">
-                  </span>
-
-                </li>
-
-
               </ul>
             </div>
             <div class="card-footer">
@@ -51,12 +41,7 @@
       </div>
 
 
-  <div id="" class="text-center pt-5" style="padding-top: 150px;">
-    <hr />
-    <h3 class="p-2" style="">Alcuni miei progetti</h3>
-    <p class="text-center"></p>
-  </div>
-  <hr />
+
 </div>
 
 

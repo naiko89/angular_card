@@ -2,16 +2,19 @@ import { WorksLinks } from '../interface/worksLinks';
 
 export const LINKS: WorksLinks[] = [
   { id: 1, name: 'MappaTest', link: 'http://www.tempastro.com/map/MapTestCase/', descr: 'Uno studio delle mappe di Google e OpenStreetmap, e di studio di tracciati gpx',
+    image:  '/assets/workweb/work1.jpeg',
     component: {frm: ['/assets/icons/jquery.png', '/assets/icons/codeigniter.png', '/assets/icons/bootstrap.png'],
                 db: [],
                 lang: ['/assets/icons/javascript.png', '/assets/icons/php.png'] }
     },
   { id: 2, name: 'TimbraturaTest', link: 'http://www.tempastro.com/timbr/public/', descr: 'Un semplice software di timbratura con login e riempimento di missioni da calendario missioni',
+    image:  '/assets/workweb/work2.jpeg',
     component: {frm: ['/assets/icons/jquery.png', '/assets/icons/codeigniter.png', '/assets/icons/bootstrap.png'],
                 db: ['/assets/icons/mariadb.png'],
                 lang: ['/assets/icons/javascript.png', '/assets/icons/php.png'] }
   },
   { id: 3, name: 'Caret', link: 'www.tre', descr: 'Una semplice web-app per ordini con carrello per interfacciare il client al server di un magazzino',
+    image:  '/assets/workweb/work3.jpeg',
     component: {frm: [ '/assets/icons/angular.png', '/assets/icons/bootstrap.png' ],
                 db: [],
                 lang: ['/assets/icons/typescript.png'] }
