@@ -6,7 +6,7 @@
 .my-subgig-title{
   font-family: 'Gruppo';
   font-size: max(20px, 10px);
-  position : absolute;
   bottom   : 0;
+  float: right;
 
 }

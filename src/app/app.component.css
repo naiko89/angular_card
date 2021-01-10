@@ -30,3 +30,9 @@
   font-family: 'Gruppo';
 }
 
+.my-gig-title{
+  font-family: 'Allerta Stencil';
+  font-family: 'Gruppo';
+  font-size: max(60px, 30px);
+  color: white;
+}

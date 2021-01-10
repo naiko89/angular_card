@@ -1,22 +1,19 @@
-<div class="container m-0 col-12" style="margin-bottom: 150px;">
+<div class="container m-0 col-12" style="margin-bottom: 0px;">
 
-  <div id="" class="text-center pt-5" style="padding-top: 150px;">
+  <div id="" class="text-center pt-1" style="padding-top: 0px;">
     <hr />
-    <h3 class="p-2" style="">Alcuni miei progetti</h3>
+    <h3 class="p-2" style="">Alcuni miei esperimenti</h3>
     <p class="text-center"></p>
   </div>
   <hr />
-
-
-
-      <div class="row card-deck">
-        <div class="card-group text-dark bg-light offset-sm-2 col-sm-8 col-12 offset-lg-2 col-lg-8 align-self-center p-3 bg-white">
-          <div class="col-sm-12 col-md-6 col-lg-4 p-1 " *ngFor="let link of links">
+  <div class="row card-deck pb-5 m-0">
+        <div class="card-group text-dark bg-light offset-lg-1 col-lg-10 bg-white">
+          <div class="col-sm-12 col-md-6 col-lg-4 m-0 p-0" *ngFor="let link of links">
           <div class="card">
             <div class="card-body p-1">
               <h5 class="card-title">
-                <div class="card-img">
-                <img class="d-block img-fluid" src="{{link.image}}">
+                <div class="card-img text-center">
+                <img class="img-fluid " src="{{link.image}}">
                 </div></h5>
               <div class="bg-info card-header text-center mb-1" style="font-size: 18px;font-family: 'Allerta Stencil';">
                 <a href="{{link.link}}" target="_blank" rel="noopener noreferrer" class="text-white" name="{{link.id}}">{{link.name}} - Visita</a>
@@ -34,14 +31,8 @@
             </div>
           </div>
           </div>
-
         </div>
-
-
-      </div>
-
-
-
+  </div>
 </div>
 
 
