@@ -12,8 +12,7 @@ import {trigger, state, style, animate, transition, stagger, keyframes, query} f
        state('closed', style({
          height: '50px',
          width: '50px',
-         marginTop: '5px',
-         marginRight: '120px'
+         marginTop: '5px'
        })),
        state('open', style({
          height: '35px',
@@ -24,8 +23,7 @@ import {trigger, state, style, animate, transition, stagger, keyframes, query} f
           {
             height: '50px',
             width: '50px',
-            marginTop: '5px',
-            marginRight: '120px'
+            marginTop: '5px'
           }))
         ]),
       transition('closed => open', [
